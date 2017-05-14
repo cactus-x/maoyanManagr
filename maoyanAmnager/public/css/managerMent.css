@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: '黑体';
+}
+.head{
+    height: 40px;
+    widows: 100%;
+    background: #2f8ab6;
+/*   background-image:url("../imgs/bbb.png")*/
+}
+.head p{
+	color:#000;
+	margin-top:10px;
+    font-size: 20px;
+}
+.head a{
+
+    text-decoration: none
+}
+.headLeft{
+    height: 100%;
+    width: 440px;
+    float: left;
+    margin-left: 20px;
+    
+}
+.headRight{
+    height: 100%;
+    width: 210px;
+    float: right;
+    line-height: 40px;
+}
+.foot{
+    height: 40px;
+    widows: 100%;
+    background: #6c74b5;
+}
+.footP{
+    text-align: center;
+    line-height: 40px;
+}

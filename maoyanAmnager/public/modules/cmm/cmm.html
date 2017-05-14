@@ -1,0 +1,144 @@
+<!--搜索框-->
+<div id="seach_box" class="seach_box_style">
+<select id="seachcontent"><option>电影</option><option>影院</option></select><input type="text" id="seach_value"/><span id="seach-but">查询</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--电影影院匹配所有内容的表格-->
+<table id="dg_cmmx"></table> 
+
+<!--添加窗口-->
+<div id="win">
+    <form id="ff">  
+        
+      <div class="gs">
+          <span>电&nbsp;影&nbsp;名:</span>
+          <select id="selectmoviename" name="name"></select> 
+      </div>   
+        
+      <div class="gs">
+          <span>电影类型:</span>
+          <input id="moviestyle" type="text" name="type"/>  
+      </div> 
+             
+      <div class="gs">
+          <span>&nbsp;时&nbsp;&nbsp;长&nbsp;:</span>
+          <input class="easyui-textbox" data-options="iconCls:'icon-search'" style="width:100px"  id="playtime" name="time">  
+     </div>
+
+     <div class="gs">   
+         <span>影&nbsp;院&nbsp;名:</span>
+          <select id="selectcinemaname" name="cinema" class="easyui-combobox" name="dept" style="width:200px;"></select> 
+    </div>   
+        
+    <div class="gs">   
+        <span>放&nbsp;映&nbsp;厅:</span>
+        <select id="room" class="easyui-combobox" name="screens" style="width:200px;"></select> 
+    </div>
+        
+    <div class="gs">
+        <span> &nbsp;票&nbsp;&nbsp;价&nbsp;: </span>
+        <input class="easyui-textbox" data-options="iconCls:'icon-search'" style="width:100px" name="money" id="money">  
+    </div>  
+        
+    <div class="gs">
+        <span>&nbsp;座&nbsp;&nbsp;数&nbsp;: </span>
+        <input type="text" id="number" style="width:80px;" name="num">
+    </div> 
+         
+    <div class="gs">
+        <span>&nbsp;日&nbsp;&nbsp;期&nbsp;: </span>
+        <input  id="dd"  type="text" name="daty"></input>    
+    </div>   
+         
+    <div class="gs">   
+         <span>换场时间:</span>
+         <select class="easyui-combobox"style="width:200px;" id="waittime">  
+             <option></option>
+             <option>10</option>
+             <option>15</option>
+             <option>20</option>
+             <option>25</option>
+             <option>30</option>
+        </select> 
+    </div>
+    
+    <div class="gs">
+        <span>入场时间:</span>
+        <input id="ss" style="width:80px;" name="startTime"/>
+        <label id="waittimelabel"></label>
+    </div> 
+    
+    <div class="gs">
+        <span>离场时间:</span>
+        <input type="text" id="overtime" style="width:80px;" name="endTime">
+    </div> 
+    
+    <input type="submit" value="确认" id="tj"/> 
+    
+  </form> 
+</div>
+<!--添加窗口样式-->
+<style>
+    .gs{
+        padding: 6px 0 0 6px;
+    }
+    #tj{
+        width: 100px;
+        margin-left: 250px;
+        margin-top: 10px;
+    }
+    .seach_box_style{
+        padding: 10px;
+        overflow: hidden;
+        clear: both;
+    }
+    #seachcontent{
+        float: left;
+    }
+     #seach_value{
+        float: left;
+    }
+     #seach-but{
+        float: left;
+    }
+    
+</style>
+
+
+
+<!--电影匹配查询-->
+<div id="movie">
+    <span>电影</span>
+    <select id="moviename_m" class="easyui-combobox" name="dept" style="width:200px;"></select> 
+    <span id="movieseach">查询</span>
+   <table id="moviedg"></table>     
+</div>
+
+
+
+
+
+
+
+
+
+<!--影院匹配查询-->
+<div id="cinema" >
+<span>影院</span>
+<select id="cinemaname_m" class="easyui-combobox" name="dept" style="width:200px;">   </select> 
+<span id="cinemaseach">查询</span>
+<table id="cinemadg"></table> 
+</div>
+
+
+

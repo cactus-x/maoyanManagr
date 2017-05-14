@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="themes/icon.css"/>
+    <link rel="stylesheet" href="themes/default/easyui.css"/>
+    <link rel="stylesheet" href="css/managerMent.css"/>
+    </head>
+<body> 
+  <div class="head">
+    <a>欢迎登录</a>
+    </div>
+  <div class="page">
+      <div id="meuubox" class="easyui-layout" style="height:580px;">      
+          <div data-options="region:'west',title:'猫眼管理系统',split:true" style="width:250px;">
+<!--              *************************************-->
+      <ul id="menu" class="easyui-tree">   
+    <li id="cinema">   <span>影院管理</span> </li>  
+    <li id="movie">   <span>电影管理</span> </li>  
+    <li id="hot">   <span>热映管理</span> </li>  
+    <li id="info">   <span>资讯管理</span> </li>  
+    <li id="wait">   <span>待映管理</span> </li>  
+    <li id="play">   <span>热播管理</span> </li>  
+    <li id="user">   <span>用户管理</span> </li>  
+    <li id="cmm">   <span>电影影院匹配管理</span> </li>  
+              </ul>
+              
+              
+<!--              *************************************-->    
+          </div>   
+          <div data-options="region:'center',title:''" style="padding:5px;background:#eee;" id="tabbox">
+<!--          //我们单页的开始位置-->
+<!--*************************************************************-->
+<div id="tabs" class="easyui-tabs" style="width:500px;height:250px;">   
+    
+    
+    <div title="欢迎使用" style="padding:20px;display:none;">    
+        我是欢迎使用页面！
+        
+        
+    </div>  
+    
+    
+</div> 
+          
+              
+             
+<!--*************************************************************-->
+<!--          //我们单页的结束位置-->
+          </div>   
+      </div>   
+  </div>
+  <div class="foot"></div>
+    
+    
+    
+    
+    <script src="js/sea.js"></script>
+    <script>
+        seajs.config({
+            base:".",
+            alias:{
+                "jquery":"js/jquery.seajs.min.js",
+                "easyui":"js/easyui.seajs.min.js",
+                "cinema":"modules/cinema/cinema.js",
+                "cmm":"modules/cmm/cmm.js",
+                "hot":"modules/hot/hot.js",
+                "info":"modules/info/info.js",
+                "movie":"modules/movie/movie.js",
+                "play":"modules/play/play.js",
+                "user":"modules/user/user.js",
+                "wait":"modules/wait/wait.js",
+                "welcome":"modules/welcome/welcome.js",
+            }
+        });
+        seajs.use("js/main.js");
+    </script>
+</body>
+</html>

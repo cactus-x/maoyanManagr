@@ -1,0 +1,97 @@
+<!--    <p>我是影院页面</p>-->
+  <style>
+
+      *{
+          font-family: '黑体';
+      }
+      .one{
+          background-image: url(../../imgs/img_seat.png);
+          width:'5px';height:'5px'
+      }
+      .two{
+          
+            width:'5px';height:'5px';
+          
+      }
+</style>  
+<table id="cinemaTable">
+
+
+
+</table>
+
+<div id="CNAadd_div" style="width:500px;height:400px;padding:30px 30px">
+            
+            <form id="CNAadd_form" method="post">
+                <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>院线名：</label><input class="easyui-textbox" id='name_ip' name="moviehose_name" style="width:60%"  data-options="label:'院线名:'">
+                </div>
+                <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>地&nbsp;&nbsp;址：</label><input class="easyui-textbox" id='address_ip' name="address" style="width:60%" data-options="label:'地址:'">
+                </div>
+                <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>电&nbsp;&nbsp;话：</label><input class="easyui-textbox" name="call" style="width:60%" data-options="label:'电话:'">
+                </div>
+                <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>网&nbsp;&nbsp;址：</label><input class="easyui-textbox" name="URL" style="width:60%" data-options="label:'网址:'">
+                </div>
+                  <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>厅类型：</label><input class="easyui-textbox" id='type' name="type" style="width:60%" data-options="label:'网址:'"/>
+                </div>
+                <div style="margin:0 0 20px 0;width:400px" id='total_div'>
+                    <div style="margin:0 0 20px 0;width:400px;border:1px solid grey">
+                    <label>放映厅名：</label><input class="easyui-textbox" id='room_ip' name="room" style="width:40%;margin:15px 0 10px 15px" data-options="label:'放映厅名:'"><br>
+                    <label>座&nbsp;&nbsp;&nbsp;&nbsp;位：</label><input class="easyui-textbox" id='seat' name="seat" style="width:40%;margin:15px 20px 10px 15px" data-options="label:'座位:'"><input type="button" id='show_seat' value='预览'/><br>
+                    <label>座位总数：</label><input class="easyui-textbox" id='sum_number' readonly='true' name="sum" style="width:40%;margin:15px 0 10px 15px" data-options="label:'放映厅名:'">
+                    </div>
+                </div>
+<!--                <input type="button" value='增加放映厅' id='CNAadd'/>-->
+            </form>
+            
+        </div>
+<!--修改窗口-->
+    <div id="CNAchange_div" style="width:500px;height:400px;padding:30px 30px">
+            
+            <form id="CNAchange_form" method="post">
+                <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>院线名：</label><input class="easyui-textbox" id='cName' name="moviehose_name" style="width:60%"  data-options="label:'院线名:'"/>
+                </div>
+                <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>地&nbsp;&nbsp;址：</label><input class="easyui-textbox" id='cAddress' name="address" style="width:60%" data-options="label:'地址:'"/>
+                </div>
+                <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>电&nbsp;&nbsp;话：</label><input class="easyui-textbox" id='cCall' name="call" style="width:60%" data-options="label:'电话:'"/>
+                </div>
+                <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>网&nbsp;&nbsp;址：</label><input class="easyui-textbox" id='cURL' name="URL" style="width:60%" data-options="label:'网址:'"/>
+                </div>
+                 <div style="margin:0 0 20px 40px;width:300px;height:20px" >
+                    <label>厅类型：</label><input class="easyui-textbox" id='cType' name="type" style="width:60%" data-options="label:'网址:'"/>
+                </div>
+                <div style="margin:0 0 20px 0;width:400px;height:136px;border:1px solid grey;readonly='true">
+                        <label>放映厅名：</label>
+                        <input class="easyui-textbox" id='cRoom' readonly='true' name="room" style="width:40%;margin:15px 20px 10px 20px" data-options="label:'放映厅名:'"/>
+                            <br>
+                        <label>座&nbsp;&nbsp;&nbsp;&nbsp;位：</label><input class="easyui-textbox" id='cSeat' name="seat" type='text'  style="width:40%;margin:15px 20px 10px 20px" data-options="label:'座位:'"/>
+                    <input type="button" id='changeShow_seat' value='预览'/><br>
+                    <label>座位总数：</label><input class="easyui-textbox" id='sum_number1' readonly='true' name="sum" style="width:40%;margin:15px 0 10px 15px" data-options="label:'放映厅名:'">
+                    </div>
+<!--                <input type="button" value='增加放映厅' id='CNAchange'/>-->
+            </form>
+<!--        xxx-->
+
+        
+        
+<!--        xx-->
+        </div>
+<div id='CNAfind_div'>
+                <input id="CNAss"></input> 
+                <div id="CNAmm" style="width:120px"> 
+                <div data-options="name:'moviehouse_name'">影院名</div> 
+                <div data-options="name:'address'">地址</div> 
+                </div> 
+</div>
+
+            <div id="show" style="width:500px;height:400px;padding:30px 30px">
+            </div>
+    

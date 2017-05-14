@@ -1,0 +1,75 @@
+*{
+    font-family: "黑体";
+    font-size: 14px;
+
+}
+
+#login_all{
+    width: 800px;
+    padding-top: 30px;
+/*                background-color: rosybrown;*/
+    margin: auto;
+}
+#login{
+    float: right;
+    margin-top: 100px;
+    width: 270px;
+}
+button{
+    background-color: deepskyblue;
+    border: none;
+    color: white;
+    padding: 6px 118px;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: deepskyblue;
+/*    margin: 10px 0;*/
+}
+#forget{
+    float: right;
+    margin-bottom: 10px;
+}
+#login_pwd{
+    width: 270px;
+    height: 30px;
+    padding-left: 30px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    outline: 1px solid darkgray;
+}
+#login_acc{
+    width: 270px;
+    height: 30px; 
+    padding-left: 30px;
+    box-sizing: border-box;
+    outline: 1px solid darkgray;
+}
+#login_box{
+    width: 270px;
+    position: relative;
+}
+#img1{
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+#img2{
+    position: absolute;
+    left: 7px;
+    top: 57px;
+}
+.last{
+    margin-top: 350px;
+    margin-left: 50px;
+
+}
+#cop{
+    color: darkgray;
+    font-size: 12px;
+}
+p{
+    margin: 10px 0;
+    
+}
